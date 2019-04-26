@@ -1,5 +1,5 @@
 {
-  "name": "zcrmsdk",
+  "name": "@trifoia/zcrmsdk",
   "version": "0.1.0",
   "description": "Node SDK for Zoho CRM",
   "main": "lib/js/ZCRMRestClient",
@@ -27,5 +27,17 @@
     "eslint": "^5.16.0",
     "eslint-config-google": "^0.12.0",
     "mocha": "^6.1.4"
-  }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trifoia/zcrm-nodejs-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Trifoia/zcrm-nodejs-sdk/issues"
+  },
+  "homepage": "https://github.com/Trifoia/zcrm-nodejs-sdk#readme"
 }

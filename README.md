@@ -1,6 +1,7 @@
 # Node JS SDK for Zoho CRM
-## Abstract
+This is a fork of the original Zoho CRM SDK project, found here: https://github.com/zoho/zcrm-nodejs-sdk. This project fork is _not_ managed by or affiliated with Zoho Corporation Pvt. Ltd. and is provided as-is. If you are following the [official SDK documentation](https://help.zoho.com/portal/kb/zoho-crm/developer-guide/server-side-sdks/node-js-sdk) then you may be better served by the original Zoho CRM SDK module
 
+## Abstract
 Node SDK is a wrapper for Zoho CRM APIs. Hence invoking a Zoho CRM API from your Node application is just a function call which provide the most appropriate response.
 
 This SDK supports both single user as well as multi user authentication.
@@ -31,15 +32,15 @@ Please note that the generated grant token is valid only for the stipulated time
 Each time server is restarted, this function has to be called and both the configuration files should be populated with proper values before calling this function, else exception will be thrown.
 
 ## Installation of Node CRM SDK
-Node JS SDK will be installed and a package named 'zcrmsdk' will be created in the installation directory.
+Node JS SDK will be installed and a package named '@trifoia/zcrmsdk' will be created in the installation directory.
 
 ```
-npm install zcrmsdk
+npm install @trifoia/zcrmsdk
 ```
 Once installed it can be used in the code as below,
 
 ```
-const ZCRMRestClient = require('zcrmsdk');
+const ZCRMRestClient = require('@trifoia/zcrmsdk');
 ```
 
 # Configuration
