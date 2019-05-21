@@ -15,28 +15,14 @@ const zoho = require(path.join(__dirname, '..', packageJson.main));
 (async () => {
   await zoho.initialize(configData);
 
-  const newSalesOrder = {
-    module: 'Sales_orders',
-    body: {
-      data: [
-        {
-          Subject: 'API Test SO',
-          Account_Name: 'Pyramid Model Consortium',
-          Product_Details: [
-            {
-              product: {
-                id: '1717725000005607107'
-              },
-              quantity: 1
-            }
-          ],
-          Status: 'Delivered',
-          Due_Date: '2019-04-25'
-        }
-      ]
-    }
-  };
+  const input ={};
+  input.module = 'Leads';
 
-  const postResult = await zoho.API.MODULES.post(newSalesOrder);
+  const params = {};
+  params.page = 0;
+  params.per_page = 5;
+  input.params = params;
+
+  const postResult = await zoho.API.MODULES.get(input);
   console.log(postResult.body);
 })();

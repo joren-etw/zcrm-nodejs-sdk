@@ -111,7 +111,7 @@ After the JS object values are added the SDK will check for two files in the [re
 These `.properties` files follow the same format of `.ini` configuration files. See the [configuration](resources/configuration.properties) and [oauth_configuration](resources/oauth_configuration.properties) files for formatting examples. Historical aliases are also available for backwards compatibility and are defined in these example files. Note that if a variable is set along with its alias, the original variable (non-alias) will be used and the alias value will be ignored
 
 ## Environment Variable Configuration
-If a value is not defined already, the system will check for environment variables to define values. All Envornment variables match the variable names listed above, with a `ZCRM__` tag preceding it. Examples:
+If a value is not defined already, the system will check for environment variables to define values. All environment variables match the variable names listed above, with a `ZCRM__` tag preceding it. Examples:
 ```
 ZCRM__client_id = client_id
 ZCRM__base_url = base_url

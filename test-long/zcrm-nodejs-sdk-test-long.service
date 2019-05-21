@@ -1,0 +1,14 @@
+[Unit]
+Description=Zoho CRM SDK Long Term Testing
+
+[Service]
+ExecStart=/home/ubuntu/.nvm/versions/node/v10.15.1/bin/node /home/ubuntu/zcrm-nodejs-sdk/test-long/app.js
+Restart=always
+User=nobody
+Group=nogroup
+EnvironmentFile=/etc/environment
+Environment=NODE_ENV=production
+WorkingDirectory=/home/ubuntu/zcrm-nodejs-sdk/
+
+[Install]
+WantedBy=multi-user.target
