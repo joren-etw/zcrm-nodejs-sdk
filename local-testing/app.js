@@ -20,7 +20,7 @@ const zoho = require(path.join(__dirname, '..', packageJson.main));
 
   const params = {};
   params.page = 0;
-  params.per_page = 5;
+  params.per_page = 1;
   input.params = params;
 
   const postResult = await zoho.API.MODULES.get(input);
